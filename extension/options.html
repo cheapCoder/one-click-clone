@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>一键 Clone 设置</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif; margin: 24px; }
+    label { display: block; font-weight: 600; margin: 16px 0 6px; }
+    input { width: 420px; padding: 8px; font-family: ui-monospace, Menlo, monospace; }
+    .muted { color: #666; font-size: 12px; margin-top: 6px; }
+    button { margin-top: 20px; padding: 8px 14px; }
+    #status { color: #1a7f37; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <h2>一键 Clone 到本地</h2>
+  <label for="root">克隆根目录</label>
+  <input id="root" placeholder="~/dev">
+  <div class="muted">仓库克隆到「根目录/仓库名」，支持 ~</div>
+  <label for="editor">编辑器 App 名称</label>
+  <input id="editor" placeholder="Visual Studio Code">
+  <div class="muted">即 /Applications 下的 App 名，如 Visual Studio Code、Cursor、Kiro；留空则只克隆不打开</div>
+  <button id="save">保存</button><span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

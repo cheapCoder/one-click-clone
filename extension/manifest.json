@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 3,
+  "name": "一键 Clone 到本地",
+  "version": "0.2.0",
+  "description": "在 GitHub/GitLab 仓库页点击图标，调用本机 git 克隆到预设目录并用编辑器打开。",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuB1orfwTMIZY2IDjCUi9AdvyC+OiDlFs46/B2omCB8E+AeWWV3kqCnMHDqPw9fMg+aurwn0W9NomzXhE/4fgGrVMRKwqddLJZgQ89C4NsdeEffg1AuhVOo0vr+BcR9NkQh5BOdwtKyLp9jJm0uyNOSItU64ZQYxox8E1pbqVBbp9D8J/6y9TdSlegE8qVYOoHBqBWtJ0YzbNGvRq1gnYv/W37BXGNe92qoqz7VwGkwHtrneQt6Nu8aZayiBs/z1AtxLPWpvOV6gk1ydLbupzAn2+BDZQMh3cqpaaDSRi3lvx9963fr95Zh3KqzB9bS7mm361k7S0Po2W6QMTjx5gGwIDAQAB",
+  "permissions": ["activeTab", "nativeMessaging", "notifications", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "一键 Clone 到本地"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
